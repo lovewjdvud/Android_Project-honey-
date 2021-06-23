@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/li_pw_find_j"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아이디를 찾기 위해서는 이름과 전환번호가 필요합니다"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+    <!--   이름 부분 시작   !-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름 :"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/ed_pw_find_name_j"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="이름를 입력하세요"
+            />
+
+    </LinearLayout>
+
+    <!--   아름 부분끝   !-->
+    <!--   아이디 부분 시작   !-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디 :"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/ed_pw_find_id_j"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="아이디를 입력하세요"
+            />
+
+    </LinearLayout>
+
+    <!--   아이디 부분끝   !-->
+
+    <!--   전화번호 시작   !-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호 :"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            />
+
+        <EditText
+          android:inputType="number"
+            android:id="@+id/ed_pw_find_phone_j"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="전화번호를 입력하세요"
+
+            />
+    </LinearLayout>
+    <!--   전화번호 끝  !-->
+
+    <Button
+
+        android:id="@+id/btn_find_pw"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="아이디 찾기"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

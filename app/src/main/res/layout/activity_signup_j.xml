@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+   android:orientation="vertical"
+
+    android:id="@+id/signup_Linearlayout"
+    android:gravity=""
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp_J.SignUp_j"
+    android:layout_gravity="center"
+    >
+
+    <!--   아이디 부분 시작   !-->
+
+
+    <LinearLayout
+
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <EditText
+        android:id="@+id/ed_signup_id_j"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:hint="아이디 "
+
+        />
+    <Button
+        android:id="@+id/btn_sign_id_confirm_j"
+        android:layout_marginLeft="10dp"
+
+        android:text="중복체크"
+        android:textSize="10dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_signup_id_j"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12자이내로 입력"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            />
+     <!--   아이디 부분 끝   !-->
+
+    <!--    비밀번호 시작   !-->
+    <LinearLayout
+        android:id="@+id/lt_signup_pw_j"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/ed_signup_pw_j"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            android:layout_marginLeft="5dp"
+            android:hint="비밀번호"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_signup_pw_confirm_j"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="영문,숫자,특수문자 포함 20자이내"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        />
+    <!--    비밀번호 끝   !-->
+
+    <!--    비밀번호 확인 시작  !-->
+    <LinearLayout
+        android:id="@+id/lt_signup_pw_confirm_j"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/ed_signup_pw_confirm_j"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginLeft="5dp"
+            android:hint="비밀번호 확인"
+            />
+        <Button
+            android:id="@+id/btn_sign_pw_confirm_j"
+            android:layout_marginLeft="10dp"
+
+            android:text="비밀번호 확인"
+            android:textSize="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <!--    비밀번호 확인 끝  !-->
+    <!--  주소 ,이름,전화번호,이메일 시작  !-->
+    <LinearLayout
+        android:id="@+id/lt_signup_name_confirm_j"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!--  주소 시작  !-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_signup_address1_j"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="주소 "
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:id="@+id/btn_sign_address_j"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="주소 검색"
+            android:textSize="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_signup_address2_j"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="상세주소 "
+            android:layout_marginTop="20dp"
+            />
+            <EditText
+                android:id="@+id/ed_signup_address_num_j"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="우편번호"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+
+        <!--  주소 끝  !-->
+
+
+    <EditText
+        android:id="@+id/ed_signup_name_j"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:hint="이름 "
+        android:layout_marginTop="20dp"
+
+        />
+        <EditText
+            android:id="@+id/ed_signup_phone_j"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="전화번호 "
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+
+            />
+        <TextView
+            android:id="@+id/tv_signup_phone_confirm_j"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            />
+        <EditText
+            android:id="@+id/ed_signup_emaile_j"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="이메일 "
+
+            />
+        <TextView
+            android:id="@+id/tv_signup_email_confirm_j"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_agree_j"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="약관 동의"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            />
+
+
+
+
+    <Button
+        android:id="@+id/btn_sign_end_j"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="회원가입"
+        android:textSize="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--    이름,전화번호,이메일  시작  !-->
+
+</LinearLayout>
